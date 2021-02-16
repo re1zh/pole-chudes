@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>5 задание - Поле чудес</title>
+	<style type="text/css">
+		/* Главный див */
+		.container {
+			width: 600px;
+		}
+		/* класс для правильной буквы 1 */
+		.letter1 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 2 */
+		.letter2 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 3 */
+		.letter3 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 4 */
+		.letter4 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 5 */
+		.letter5 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 6 */
+		.letter6 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		.letter7 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		.letter8 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		.letter9 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* авт. отступы */
+		.mx-auto {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		/* DISPLAY FLEX */
+		.d-flex {
+			display: flex;
+		}
+		/* ШРИФТ Arial */
+		.ff-arial {
+			font-family: Arial;
+		}
+		/* фон светло-серый, почти белый */
+		.bg-light {
+			background-color: #f8f9fa;
+		}
+		/* фон желтый */
+		.bg-warning {
+			background-color: #ffc107;
+		}
+		/* ведущий Якубович */
+		.yakubovich {
+			background-image: url(1.png);
+			background-size: 100% 100%;
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			left: 0px;
+			top: 400px;
+		}
+	</style>
+</head>
+<body class="ff-arial">
+	<!-- Вопрос -->
+	<div class="bg-warning container mx-auto">
+		 Научно-фантастический роман американского писателя Ричарда Мэтисона, оказавший большое влияние на формирование в современной литературе образа вампиров, зомби, популяризации концепции всемирного апокалипсиса по причине пандемии и идеи описания вампиризма как заболевания.
+	</div>
+	<!-- Главный див -->
+	<div class="container mx-auto d-flex bg-light">
+		<div class="letter1">
+			<h1>Я</h1>
+		</div>
+		<div class="letter2">
+			<h1>-</h1>
+		</div>
+		<div class="letter3">
+			<h1>Л</h1>
+		</div>
+		<div class="letter4">
+			<h1>Е</h1>
+		</div>
+		<div class="letter5">
+			<h1>Г</h1>
+		</div>
+		<div class="letter6">
+			<h1>Е</h1>
+		</div>
+		<div class="letter7">
+			<h1>Н</h1>
+		</div>
+		<div class="letter8">
+			<h1>Д</h1>
+		</div>
+		<div class="letter9">
+			<h1>А</h1>
+		</div>
+	</div>
+	<!-- Добавьте классы для букв сами -->
+	<span class="a">A</span>
+	<span class="b">Б</span>
+	<span class="v">В</span>
+	<span class="g">Г</span>
+	<span class="d">Д</span>		
+	<span class="e">Е</span>	
+	<span>Ё</span>
+	<span class="j">Ж</span>
+	<span class="">З</span>
+	<span class="">И</span>
+	<span class="">Й</span>
+	<span class="">К</span>
+	<span class="l">Л</span>
+	<span class="">М</span>
+	<span class="n">Н</span>
+	<span class="">О</span>
+	<span class="">П</span>
+	<span class="">Р</span>
+	<span class="">С</span>
+	<span class="">Т</span>
+	<span class="">У</span>
+	<span class="">Ф</span>
+	<span class="">Х</span>
+	<span class="">Ц</span>
+	<span class="">Ч</span>
+	<span class="">Ш</span>
+	<span class="">Щ</span>
+	<span class="">Ъ</span>
+	<span class="">Ы</span>
+	<span class="">Ь</span>
+	<span class="">Э</span>
+	<span class="">Ю</span>
+	<span class="ya">Я</span>
+	<span class="tire">-</span>
+	<!-- ведущий -->
+	<div class="yakubovich">
+	</div>
+	<script type="text/javascript">
+		/* Создай игру "Поле чудес".
+		1. Когда кликаешь на правильную букву алфавита, то открывается буква в слове.
+		2. Когда кликаешь на неправильную букву алфавита, то выходит всплывающее окно 'Неверно!'.
+		Вначале сделай, так чтобы работали клики на правильные буквы. Потом сделай, так чтобы работали клики на 1-2 неправильные буквы. На все 33 буквы алфавита, можно не делать. Да, надо каждой букве придумывать новый класс.
+		3. Придумай свой вопрос и ответ. 
+		 */
+		let let1 = document.querySelector(".letter1");
+		let let2 = document.querySelector(".letter2");
+		let let3 = document.querySelector(".letter3");
+		let let4 = document.querySelector(".letter4");
+		let let5 = document.querySelector(".letter5");
+		let let6 = document.querySelector(".letter6");
+		let let7 = document.querySelector(".letter7");
+		let let8 = document.querySelector(".letter8");
+		let let9 = document.querySelector(".letter9");
+		let nev1 = document.querySelector(".b");
+		let nev2 = document.querySelector(".j");
+
+		document.querySelector(".ya").onclick = function(){
+			let1.style.background = 'yellow'
+		}
+		document.querySelector(".tire").onclick = function(){
+			let2.style.background = 'yellow'
+		}
+		document.querySelector(".l").onclick = function(){
+			let3.style.background = 'yellow'
+		}
+		document.querySelector(".e").onclick = function(){
+			let4.style.background = 'yellow'
+			let6.style.background = 'yellow'
+		}
+		document.querySelector(".g").onclick = function(){
+			let5.style.background = 'yellow'
+		}
+		document.querySelector(".n").onclick = function(){
+			let7.style.background = 'yellow'
+		}
+		document.querySelector(".d").onclick = function(){
+			let8.style.background = 'yellow'
+		}
+		document.querySelector(".a").onclick = function(){
+			let9.style.background = 'yellow'
+		}
+		nev1.onclick = function(){
+			alert("neverno")
+		}
+		nev2.onclick = function(){
+			alert("neverno")
+		}
+	</script>
+</body>
+</html>
